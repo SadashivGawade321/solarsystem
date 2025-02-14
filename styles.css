@@ -1,0 +1,516 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Top Bar */
+.top-bar {
+  
+    justify-content: space-between;
+    background-color: #002a3a;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001a29;
+    padding: 15px 20px;
+    border-bottom: 2px solid cyan;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+}
+
+.bundle {
+    color: white;
+    margin-right: 15px;
+}
+
+.download-btn, .explore-btn {
+    background-color: #a1b800;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.explore-btn {
+    background-color: #004466;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('https://t4.ftcdn.net/jpg/08/71/01/81/360_F_871018122_1GEVDfeRFvVoDbX1Ob9i8mbrBS8Y0hqF.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px cyan;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+.planets-section {
+    padding: 60px 20px;
+    background: url('https://media.istockphoto.com/id/1173451503/vector/space-background-with-realistic-nebula-and-shining-stars-colorful-cosmos-with-stardust-and.jpg?s=612x612&w=0&k=20&c=mEoyUd-7lXPnVzcDgN_LFdHTiGAnkzjlgtXEte9KMVc=') no-repeat center center/cover;
+    color: #fff;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+}
+
+.planets-section h2 {
+    text-align: left;
+    font-size: 36px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.planet-container {
+    display: grid;
+  
+    gap: 20px;
+    padding: 20px;
+}
+
+.planet-card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.planet-card:hover {
+    transform: scale(1.05);
+}
+
+.planet-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.planet-card img {
+    width: 115px;
+    height: 115px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+}
+
+
+
+.planet-card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.planet-card span {
+    color: cyan;
+    font-weight: bold;
+}
+
+.planet-card button {
+    background: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.planet-card button:hover {
+    background: cyan;
+    color: #000;
+}
+
+.earth-section {
+    padding: 60px 20px;
+    background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/edu_what_is_a_satellite.jpg') no-repeat center center/cover;
+    color: #fff;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+}
+
+.earth-section h2 {
+    text-align: left;
+    font-size: 36px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.earth-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.earth-card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.earth-card:hover {
+    transform: scale(1.05);
+}
+
+.earth-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.earth-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.earth-card p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.earth-card span {
+    color: cyan;
+    font-weight: bold;
+}
+
+.earth-card button {
+    background: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.earth-card button:hover {
+    background: cyan;
+    color: #000;
+}
+.planets-section {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid cyan;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0 0 15px cyan;
+}
+
+.planets-section h2 {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.planet-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.planet-card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.planet-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px cyan;
+}
+
+.planet-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.planet-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid cyan;
+}
+
+.planet-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.planet-card button {
+    background: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.planet-card button:hover {
+    background: cyan;
+    color: #000;
+    box-shadow: 0 0 10px cyan;
+}
+
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+.info-section {
+    background: url('https://example.com/star-bg.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.info-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.info-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.info-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.info-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.info-content li {
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+body {
+    background-color: #000;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+.space-nav {
+    background: url('background_footer_top.png') no-repeat center center/cover;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+.space-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.space-nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.space-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0 0 5px #00ffff;
+    transition: color 0.3s ease;
+}
+
+.space-nav ul li a:hover {
+    color: #00ffff;
+}
+
+footer {
+    background-color: black;
+    color: #00ffff;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .contact-us, .logo-footer, .spacepedia {
+    flex: 1;
+  }
+  
+  h3 {
+    color: #00ffff;
+    margin-bottom: 15px;
+  }
+  
+  .contact-us p {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #00ffff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .logo-footer img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .logo-footer p {
+    color: white;
+  }
+  
+  .logo-footer a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  .spacepedia ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+  }
+  
+  .spacepedia li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+  }
+  
+  .spacepedia li a:hover {
+    color: #00ffff;
+  }
+  
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+  }
+  
+  .scattered-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .planet {
+    position: absolute;
+    width: 100px; /* Adjust for smaller size */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+
+
+  
